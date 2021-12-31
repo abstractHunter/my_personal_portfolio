@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #ddd;
+    background-color: #1C2128;
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 75px;
+    letter-spacing: 0.7rem;
+}
+h2 {
+    font-size: 40px;
+}
+
+
+ul {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+  
+ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+  
+ul li a {
+    position: relative; 
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #777;
+    transition: .5s;
+}
+  
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+  
+ul li a:hover::before {
+    transform: scale(1.1);
+}
+
+.github-link::before {
+    background: #ffee10;
+}
+.github-link:hover::before {
+    box-shadow: 0 0 15px #ffee10;
+}
+.github-link:hover {
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+}
+
+.linkedin-link::before {
+    background: #0A66C2;
+}
+.linkedin-link:hover::before {
+    box-shadow: 0 0 15px #0A66C2;
+}
+.linkedin-link:hover {
+    color: #0A66C2;
+    box-shadow: 0 0 5px #0A66C2;
+    text-shadow: 0 0 5px #0A66C2;
+}
+
+.twitter-link::before {
+    background: #1B9FF1;
+}
+.twitter-link:hover::before {
+    box-shadow: 0 0 15px #1B9FF1;
+}
+.twitter-link:hover {
+    color: #1B9FF1;
+    box-shadow: 0 0 5px #1B9FF1;
+    text-shadow: 0 0 5px #1B9FF1;
+}
+
+.facebook-link::before {
+    background: #1877F2;
+}
+.facebook-link:hover::before {
+    box-shadow: 0 0 15px #1877F2;
+}
+.facebook-link:hover {
+    color: #1877F2;
+    box-shadow: 0 0 5px #1877F2;
+    text-shadow: 0 0 5px #1877F2;
+}
+
+.mail-link::before {
+    background: #fff;
+}
+.mail-link:hover::before {
+    box-shadow: 0 0 15px #fff;
+}
+.mail-link:hover {
+    color: #fff;
+    box-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 5px #fff;
+}
+
+.whatsapp-link::before {
+    background: #25D366;
+}
+.whatsapp-link:hover::before {
+    box-shadow: 0 0 15px #25D366;
+}
+.whatsapp-link:hover {
+    color: #25D366;
+    box-shadow: 0 0 5px #25D366;
+    text-shadow: 0 0 5px #25D366;
+}
