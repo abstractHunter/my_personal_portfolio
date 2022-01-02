@@ -11,6 +11,7 @@ body {
     color: #ddd;
     background-color: #1C2128;
     height: 100vh;
+    min-height: 300px;
     width: 100%;
     padding: 50px;
     display: flex;
@@ -33,11 +34,13 @@ ul {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
 }
   
 ul li {
     list-style: none;
-    margin: 0 15px;
+    margin: 10px 20px;
 }
   
 ul li a {
